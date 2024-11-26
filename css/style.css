@@ -1,0 +1,133 @@
+/*home page*/
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+nav{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: #c6ffc6;
+}
+.navigation{
+    font-size: 30px;
+    width: 300px;  
+    height: 50px;  
+    padding: 5px;
+    background-color: rgb(199 255 148);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    align-self: center;
+}
+
+.members{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+
+header{
+    background-color: #6ef2d8;
+}
+
+.heading{
+    margin: 10px;
+}
+
+.info{
+    margin: 10px;
+    font-size: 23px;
+}
+
+.pink{
+    color: #e4007f;
+}
+
+.green{
+    color: #18afae;
+}
+
+.blue{
+    color: #4760ab;
+}
+
+.orange{
+    color: #ff7200;
+}
+
+@media (max-width: 576px) {
+    h1{
+        font-size: 26px;
+    }
+
+    .info{
+        font-size: 18px;
+    }
+
+    .members{
+        width: 90%;
+    }
+
+    .navigation {
+        font-size: 18px;
+        margin: 5px;
+        width: 120px;
+        height: 40px;
+    }
+}
+
+body{
+    background-color: #ffe5c7;
+    font-family: 'Montserrat', 'M PLUS 1p', 'Noto Serif JP';
+}
+
+footer{
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* music page */
+.song-list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* flex item of 20% per item */
+.flex-song-item {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 20%; /* this creates how many columns of items can be occupied depending on the space taken up by one.*/
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #e4e4e4;
+    background-color: #fffafa;
+    margin: 1.2%;
+}
+
+.flex-song-img img{
+    width: 100%;
+    height: auto;
+    border: 2px solid #e4e4e4;
+}
+
+.flex-song-info {
+    margin-top: auto;
+    font-size: 20px;
+}
+
+@media (max-width: 576px) {
+    .flex-song-item {
+      flex: 1 60%;
+      flex-grow: inherit;
+    }
+}
+
