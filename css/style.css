@@ -96,6 +96,29 @@ footer{
 
 
 /* history page */
+iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
+
+h4{
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    iframe {
+        width: 60%;
+        height: 405px;
+    }
+    h4{
+        font-size: 20px;
+    }
+}
+
+
+/* members page */
 .minori{
     background-color: #FFCDAC;
 }
