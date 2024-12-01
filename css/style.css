@@ -1,10 +1,12 @@
 /*home page*/
+/* center the logo */
 .logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 45%;
 }
+/* nav is the flex container */
 nav{
     text-align: center;
     display: flex;
@@ -13,6 +15,8 @@ nav{
     flex-direction: row;
     background-color: #c6ffc6;
 }
+
+/* .navigation is the flex item */
 .navigation{
     font-size: 30px;
     width: 300px;  
@@ -25,6 +29,7 @@ nav{
     align-self: center;
 }
 
+/* center the image of the members */
 .members{
     display: block;
     margin-left: auto;
@@ -36,6 +41,7 @@ header{
     background-color: #6ef2d8;
 }
 
+/* adjust the position and resize font size of those with class .heading and .info */
 .heading{
     margin: 10px;
 }
@@ -45,9 +51,9 @@ header{
     font-size: 23px;
 }
 
+/* color-code text color according to the members*/
 .pink{
-    color: #fa0f80
-    /* color: #e4007f; */
+    color: #fa0f80;
 }
 
 .green{
@@ -62,6 +68,7 @@ header{
     color: #ff7200;
 }
 
+/* adjust the font size and width for smaller screens */
 @media (max-width: 576px) {
     h1{
         font-size: 26px;
@@ -77,17 +84,19 @@ header{
 
     .navigation {
         font-size: 18px;
-        margin: 5px;
+        margin: 1px;
         width: 120px;
         height: 40px;
     }
 }
 
+/* set the background color of the body and the font-family for the website */
 body{
     background-color: #ffe5c7;
     font-family: 'Montserrat', 'M PLUS 1p', 'Noto Serif JP';
 }
 
+/* set the font size and position of the footer */
 footer{
     font-size: 16px;
     text-align: center;
@@ -96,29 +105,35 @@ footer{
 
 
 /* history page */
+/* center the iframe (for smaller screens)*/
 iframe{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%
+    height: 17em;
+    width: 80%;
 }
 
-h4{
+/* adjust the position of the disclaimer */
+.disclaimer{
     text-align: center;
 }
 
+/* adjust the width and height of the iframe and font size of disclaimer for larger screens */
 @media (min-width: 1200px) {
     iframe {
-        width: 60%;
-        height: 405px;
+        width: 55%;
+        height: 450px;
     }
-    h4{
+    .disclaimer{
         font-size: 20px;
     }
 }
 
 
+
 /* members page */
+/* color-code the background color according to the members */
 .minori{
     background-color: #FFCDAC;
 }
@@ -135,24 +150,31 @@ h4{
     background-color: #9AEEDE;
 }
 
+/* adjust the position and resize the character's image */
+/* flex-item1 on the left*/
 .char-img {
     flex-grow: inherit;
     flex-basis: 37%;
     margin-top: 40px;
-  }
+}
 
-  .profile{
-    flex-basis: 55%;
-    padding: 2%
-  }
+/* position the character's profile */
+/* flex-item2 on the right*/
+.profile{
+flex-basis: 55%;
+padding: 2%;
+}
 
-  .container {
-    display: flex;
-    flex-flow: wrap;
-    width: 100%;
-    height: auto;
-  }
-  
+/* flex container */
+.container {
+display: flex;
+flex-flow: wrap;
+width: 100%;
+height: auto;
+}
+
+/* change the display for smaller screens, 
+set flex-item1 to the top, while flex-item2 to the bottom */
 @media (max-width: 576px) {
   .char-img {
     padding: 5%;
@@ -165,6 +187,7 @@ h4{
 
 }
 
+/* center the image */
 img{
     display: block;
     margin-left: auto;
@@ -176,6 +199,7 @@ img{
 
 
 /* music page */
+/* flex container */
 .song-list {
     display: flex;
     width: 100%;
@@ -195,17 +219,20 @@ img{
     margin: 1.2%;
 }
 
+/* size the image and add border */
 .flex-song-img img{
     width: 100%;
     height: auto;
     border: 2px solid #e4e4e4;
 }
 
+/* set the font size of the song information */
 .flex-song-info {
-    margin-top: auto;
     font-size: 20px;
 }
 
+/* adjust for smaller screens by increasing the size 
+for only 1 song to be seen on the screen at a time*/
 @media (max-width: 576px) {
     .flex-song-item {
       flex: 1 60%;
@@ -213,3 +240,7 @@ img{
     }
 }
 
+/* Class to hide items */
+.hidden {
+    display: none; 
+}
