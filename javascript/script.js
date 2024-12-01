@@ -1,22 +1,3 @@
-//initialize the variables
-const home = document.querySelector("#home");
-const history = document.querySelector("#history");
-const members = document.querySelector("#members");
-const music = document.querySelector("#music");
-
-//indicates to the user that the button has been clicked
-function onPage(page) {
-    if(page === home){
-        home.style.backgroundColor = "#fa0f80";
-    } else if(page === history){
-        history.style.backgroundColor = "#0668e9";
-    } else if(page === members){
-        members.style.backgroundColor = "#ff7200";
-    } else if(page === music){
-        music.style.backgroundColor = "#18afae";
-    }
-}
-
 //Changes the image when user clicks on the image
 function toggleImage(imageElement) {
     // Get the current and alternate image sources from data attributes
