@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>FED Assignment 1</title>
+    <title>MORE MORE JUMP! History</title>
     <link href="css\normalize.css" rel="stylesheet" type="text/css"/>
     <link href="css\style.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <!-- navigation -->
         <nav>
-            <button class="navigation"><a href="index.html">Home</a></button>
-            <button class="navigation"><a href="history.html">History</a></button>
-            <button class="navigation"><a href="members.html">Members</a></button>
-            <button class="navigation"><a href="music.html">Music</a></button>
+            <button class="navigation"><a href="index.html" id = "home" onclick="onPage(this)">Home</a></button>
+            <button class="navigation"><a href="history.html" id = "history" onclick="onPage(this)">History</a></button>
+            <button class="navigation"><a href="members.html" id = "members" onclick="onPage(this)">Members</a></button>
+            <button class="navigation"><a href="music.html" id = "music" onclick="onPage(this)">Music</a></button>
         </nav>
     </header>
 
+    <!-- MMJ main story and first song -->
     <section>
         <article>
             <h1 class="heading">History:</h1>
@@ -60,44 +62,46 @@
         <article>
             <h1 class="heading">First song:</h1>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/OKnlAzYghkk?si=xHWFaIynFtF3vLNi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h4>Disclaimer: the video is muted due to copyright. <a href="https://youtu.be/3yQWZcYXcgg?si=mP64oPg8wp9dGVhv">Click to the official 3DMV</a></h4>
+            <h4 class="disclaimer">Disclaimer: the video is muted due to copyright. <a href="https://youtu.be/3yQWZcYXcgg?si=mP64oPg8wp9dGVhv">Click to the official 3DMV</a></h4>
             <p class = info>
                 Their first song is “Idol Shin'eitai”. It is a commissioned song by Mitchie M. The song features Hatsune Miku, 
                 Hanasato Minori, Kiritani Haruka, Momoi Airi and Hinomori Shizuku. It was released on 30/09/2020.
             </p>
         </article><br>
 
+        <!-- explaining in-game terms -->
         <article>
             <h1 class="heading">Extra information(in-game terms):</h1>
             <h2 class="heading">Stage SEKAI:</h2>
-                <p class="info">The Stage SEKAI is a world of stages illuminated by countless glowsticks where the VIRTUAL SINGERs perform. 
-                    The Stage SEKAI was created from the girls' dreams and the determination of becoming an idol. There are a vast amount of stages, 
-                    and it is unknown how far the stages go on for.
-                </p> <br> 
+            <p class="info">The Stage SEKAI is a world of stages illuminated by countless glowsticks where the VIRTUAL SINGERs perform. 
+                The Stage SEKAI was created from the girls' dreams and the determination of becoming an idol. There are a vast amount of stages, 
+                and it is unknown how far the stages go on for.
+            </p> <br> 
 
             <h2 class="heading">VIRTUAL SINGERS:</h2>
-                <p class="info">They are a group consisting of vocaloids. Vocaloid is a software program that uses pre-recorded vocal samples from voice actors 
-                or singers(voicebanks) to generate synthesized singing based on inputted lyrics and melody information. VIRTUAL SINGERS live in SEKAIs, 
-                with different appearances in each SEKAI and help people discover their true feelings. They play a minor role in the story, supporting 
-                the main casts in their journey. The vocaloids featured in the game are Hatsune Miku, Kagamine Rin, Kagamine Len, Megurine Luka, MEIKO and KAITO. 
-                Other vocaloids like GUMI, vflower, KAFU are sometimes featured in the game through the songs under the VIRTUAL SINGERS tag but they do not 
-                have in-game models. 
-                </p> <br> 
+            <p class="info">They are a group consisting of vocaloids. Vocaloid is a software program that uses pre-recorded vocal samples from voice actors 
+            or singers(voicebanks) to generate synthesized singing based on inputted lyrics and melody information. VIRTUAL SINGERS live in SEKAIs, 
+            with different appearances in each SEKAI and help people discover their true feelings. They play a minor role in the story, supporting 
+            the main casts in their journey. The vocaloids featured in the game are Hatsune Miku, Kagamine Rin, Kagamine Len, Megurine Luka, MEIKO and KAITO. 
+            Other vocaloids like GUMI, vflower, KAFU are sometimes featured in the game through the songs under the VIRTUAL SINGERS tag but they do not 
+            have in-game models. 
+            </p> <br> 
                 
             <h2 class="heading">SEKAI:</h2>
-                <p class="info">SEKAI is another world separate from the real world. SEKAI are built from emotions, and the place where VIRTUAL SINGERS live. 
-                There are many different SEKAIs, each one formed from the feelings of people who are struggling to understand themselves. 
-                When the feelings of a person are realized, they will manifest in the SEKAI through a song. 
-                People can travel to their SEKAI by playing "Untitled" songs. These songs have no melody or lyrics and are created when a SEKAI is born. 
-                </p>
+            <p class="info">SEKAI is another world separate from the real world. SEKAI are built from emotions, and the place where VIRTUAL SINGERS live. 
+            There are many different SEKAIs, each one formed from the feelings of people who are struggling to understand themselves. 
+            When the feelings of a person are realized, they will manifest in the SEKAI through a song. 
+            People can travel to their SEKAI by playing "Untitled" songs. These songs have no melody or lyrics and are created when a SEKAI is born. 
+            </p>
     </section>
     <br>
     <br>
     <footer>
         Find out more in the <a href="members.html">Members</a> and <a href="music.html">Music</a> page 
-        or go to the <a href ="https://projectsekai.fandom.com/wiki/MORE_MORE_JUMP!">Project SEKAI MORE MORE JUMP! wiki</a> or 
-        <a href="https://projectsekai.fandom.com/wiki/SEKAI_(location)">Project SEKAI SEKAI wiki</a> 
+        or go to the <a href ="https://projectsekai.fandom.com/wiki/MORE_MORE_JUMP!">Project SEKAI - MORE MORE JUMP! wiki</a> or 
+        <a href="https://projectsekai.fandom.com/wiki/SEKAI_(location)">Project SEKAI - SEKAI wiki</a> 
         for more information. All rights belongs to SEGA and Colorful Palatte.
     </footer>
+    <script src="javascript\script.js"></script>
 </body>
 </html>
