@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>FED Assignment 1</title>
+    <title>MORE MORE JUMP! Members</title>
     <link href="css\normalize.css" rel="stylesheet" type="text/css"/>
     <link href="css\style.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <!-- navigation -->
         <nav>
-            <button class="navigation"><a href="index.html">Home</a></button>
-            <button class="navigation"><a href="history.html">History</a></button>
-            <button class="navigation"><a href="members.html">Members</a></button>
-            <button class="navigation"><a href="music.html">Music</a></button>
+            <button class="navigation"><a href="index.html" id = "home" onclick="onPage(this)">Home</a></button>
+            <button class="navigation"><a href="history.html" id = "history" onclick="onPage(this)">History</a></button>
+            <button class="navigation"><a href="members.html" id = "members" onclick="onPage(this)">Members</a></button>
+            <button class="navigation"><a href="music.html" id = "music" onclick="onPage(this)">Music</a></button>
         </nav>
     </header>
 
     <h1 class="heading">MORE MORE JUMP! Members</h1>
+
+    <h3 class="heading" style = "color: blue">Click the image to change the outfit</h3>
+
+    <!-- information about Minorin, Haruka, Airi, Shizuku -->
     <h1 class="heading orange">Hanasato Minori</h1>
     <section class="container minori">
         <div class="char-img">
-          <img src="images/Minori_3rd_Anniversary.webp" alt="Minori's second group oufit">
+            <img src="images/Minori_3rd_Anniversary.webp" alt="Minori's second group oufit" data-default="images/Minori_3rd_Anniversary.webp" data-toggle="images/Minori.webp" onclick="toggleImage(this)">
         </div>
         <div class="profile">
             <h1>Hanasato Minori (花里 みのり)</h1>
@@ -94,7 +99,7 @@
     <h1 class="heading blue">Kiritani Haruka</h1>
     <section class="container haruka">
         <div class="char-img">
-          <img src="images/Haruka_3rd_Anniversary.webp" alt="Haruka's second group oufit">
+            <img src="images/Haruka_3rd_Anniversary.webp" alt="Haruka's second group oufit" data-default="images/Haruka_3rd_Anniversary.webp" data-toggle="images/Haruka.webp" onclick="toggleImage(this)">
         </div>
         <div class="profile">
             <h1>Kiritani Haruka (桐谷 遥)</h1>
@@ -166,7 +171,7 @@
     <h1 class="heading pink">Momoi Airi</h1>
     <section class="container airi">
         <div class="char-img">
-          <img src="images/Airi_3rd_Anniversary.webp" alt="Airi's second group oufit">
+            <img src="images/Airi_3rd_Anniversary.webp" alt="Airi's second group oufit" data-default="images/Airi_3rd_Anniversary.webp" data-toggle="images/Airi.webp" onclick="toggleImage(this)">
         </div>
         <div class="profile">
             <h1>Momoi Airi (桃井 愛莉)</h1>
@@ -244,7 +249,7 @@
     <h1 class="heading green">Hinomori Shizuku</h1>
     <section class="container shizuku">
         <div class="char-img">
-          <img src="images/Shizuku_3rd_Anniversary.webp" alt="Shizuku's second group oufit">
+            <img src="images/Shizuku_3rd_Anniversary.webp" alt="Shizuku's second group oufit" data-default="images/Shizuku_3rd_Anniversary.webp" data-toggle="images/Shizuku.webp" onclick="toggleImage(this)">
         </div>
         <div class="profile">
             <h1>Hinomori Shizuku (日野森 雫)</h1>
@@ -329,6 +334,6 @@
         <a href="history.html">History</a> and <a href="music.html">Music</a> page. 
         All images used are offical and the rights belongs to SEGA and Colorful Palatte.
     </footer>
-
+    <script src="javascript\script.js"></script>
 </body>
 </html>

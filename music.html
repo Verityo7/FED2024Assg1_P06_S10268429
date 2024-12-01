@@ -3,24 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>FED Assignment 1</title>
+    <title>MORE MORE JUMP! Music</title>
     <link href="css\normalize.css" rel="stylesheet" type="text/css"/>
     <link href="css\style.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <!-- navigation -->
         <nav>
-            <button class="navigation"><a href="index.html">Home</a></button>
-            <button class="navigation"><a href="history.html">History</a></button>
-            <button class="navigation"><a href="members.html">Members</a></button>
-            <button class="navigation"><a href="music.html">Music</a></button>
+            <button class="navigation"><a href="index.html" id = "home" onclick="onPage(this)">Home</a></button>
+            <button class="navigation"><a href="history.html" id = "history" onclick="onPage(this)">History</a></button>
+            <button class="navigation"><a href="members.html" id = "members" onclick="onPage(this)">Members</a></button>
+            <button class="navigation"><a href="music.html" id = "music" onclick="onPage(this)">Music</a></button>
         </nav>
     </header>
 
     <h1 class="heading">Commissioned Songs:</h1>
+
+    <!-- dropdown menu for each characters or the group or all focus songs -->
+    <h3 class="heading">Filter Songs</h3>
+    <label for="filter-select" class="info">Whose focus songs are you interested in:</label>
+    <select class="info" id="filter-select" onchange="filterResults()">
+      <option value="all">All</option>
+      <option value="mino">Minori</option>
+      <option value="haru">Haruka</option>
+      <option value="airiM">Airi</option>
+      <option value="shizu">Shizuku</option>
+      <option value="group">Group</option>
+    </select>
+
+    <!-- list of songs, title color-coded according to the focus character -->
     <section class="song-list">
-        <div class="flex-song-item">
+        <div class="flex-song-item group item">
             <div class="flex-song-img">
                 <img src="images/Idol_Shineitai_Game_Cover.webp" alt="">
             </div>
@@ -36,7 +51,7 @@
             </div>
         </div>
 
-        <div class="flex-song-item">
+        <div class="flex-song-item airiM item">
 			<div class="flex-song-img">
 				<img src="images/More_More_Game_Cover.webp">
             </div>
@@ -52,7 +67,7 @@
             </div>
         </div>
         
-        <div class="flex-song-item">
+        <div class="flex-song-item shizu item">
 			<div class="flex-song-img">
 				<img src="images/Color_of_Drops_Game_Cover.webp">
             </div>
@@ -68,7 +83,7 @@
             </div>
         </div>
 
-        <div class="flex-song-item">
+        <div class="flex-song-item mino item">
 			<div class="flex-song-img">
 				<img src="images/Tenshi_no_Clover_Game_Cover.webp">
             </div>
@@ -85,7 +100,7 @@
             </div>
         </div>
 
-        <div class="flex-song-item">
+        <div class="flex-song-item haru item">
 			<div class="flex-song-img">
 				<img src="images/Ai_no_Material_Game_Cover.webp">
             </div>
@@ -101,7 +116,7 @@
             </div>
         </div>
 
-        <div class="flex-song-item">
+        <div class="flex-song-item airiM item">
 			<div class="flex-song-img">
 				<img src="images/Ice_Drop_Game_Cover.webp">
             </div>
@@ -117,7 +132,7 @@
             </div>
         </div>
         
-        <div class="flex-song-item">
+        <div class="flex-song-item mino item">
 			<div class="flex-song-img">
 				<img src="images/Worldwide_Wander_Game_Cover.webp">
             </div>
@@ -133,7 +148,7 @@
             </div>
         </div>
         
-        <div class="flex-song-item">
+        <div class="flex-song-item shizu item">
 			<div class="flex-song-img">
 				<img src="images/Metamo_Reborn_Game_Cover.webp">
             </div>
@@ -149,7 +164,7 @@
             </div>
         </div>
         
-        <div class="flex-song-item">
+        <div class="flex-song-item haru item">
 			<div class="flex-song-img">
 				<img src="images/IF_Game_Cover.webp">
             </div>
@@ -166,7 +181,7 @@
             </div>
         </div>
         
-        <div class="flex-song-item">
+        <div class="flex-song-item airiM item">
 			<div class="flex-song-img">
 				<img src="images/Parasol_Cider_Game_Cover.webp">
             </div>
@@ -182,7 +197,7 @@
             </div>
         </div>
         
-        <div class="flex-song-item">
+        <div class="flex-song-item mino item">
 			<div class="flex-song-img">
 				<img src="images/DREAM_PLACE_Game_Cover.webp">
             </div>
@@ -198,7 +213,7 @@
             </div>
         </div>
 
-        <div class="flex-song-item">
+        <div class="flex-song-item haru item">
 			<div class="flex-song-img">
 				<img src="images/Float_Planner_Game_Cover.webp">
             </div>
@@ -214,7 +229,7 @@
             </div>
         </div>
         
-        <div class="flex-song-item">
+        <div class="flex-song-item shizu item">
 			<div class="flex-song-img">
 				<img src="images/Watashi_wa_Watashitachi_wa_Game_Cover.webp">
             </div>
@@ -230,7 +245,7 @@
             </div>
         </div>
 
-        <div class="flex-song-item">
+        <div class="flex-song-item airi item">
 			<div class="flex-song-img">
 				<img src="images/Momoiro_no_Kagi_Game_Cover.webp">
             </div>
@@ -246,7 +261,7 @@
             </div>
         </div>
 
-        <div class="flex-song-item">
+        <div class="flex-song-item mino item">
 			<div class="flex-song-img">
 				<img src="images/Teammate_Game_Cover.webp">
             </div>
@@ -262,7 +277,7 @@
             </div>
         </div>
 
-        <div class="flex-song-item">
+        <div class="flex-song-item group item">
 			<div class="flex-song-img">
 				<img src="images/Warera_Stain_Busters_Game_Cover.webp">
             </div>
@@ -278,7 +293,7 @@
             </div>
         </div>
 
-        <div class="flex-song-item">
+        <div class="flex-song-item shizu item">
 			<div class="flex-song-img">
 				<img src="images/Hug_Game_Cover.webp">
             </div>
@@ -294,7 +309,7 @@
             </div>
         </div>
 
-        <div class="flex-song-item">
+        <div class="flex-song-item group item">
 			<div class="flex-song-img">
 				<img src="images/MOTTO_Game_Cover.webp">
             </div>
@@ -311,7 +326,7 @@
             </div>
         </div>
 
-        <div class="flex-song-item">
+        <div class="flex-song-item mino item">
 			<div class="flex-song-img">
 				<img src="images/JUMPIN_Game_Cover.webp">
             </div>
@@ -328,7 +343,7 @@
             </div>
         </div>
 
-        <div class="flex-song-item">
+        <div class="flex-song-item haru item">
 			<div class="flex-song-img">
 				<img src="images/Supernova_Game_Cover.webp">
             </div>
@@ -345,7 +360,7 @@
             </div>
         </div>
 
-        <div class="flex-song-item">
+        <div class="flex-song-item airiM item">
 			<div class="flex-song-img">
 				<img src="images/Killer_Game_Cover.webp">
             </div>
@@ -366,5 +381,6 @@
     <footer>
         <a href="https://projectsekai.fandom.com/wiki/Category:MORE_MORE_JUMP!_Songs#Commissioned_Songs">Find out more</a>
     </footer>
+    <script src="javascript\script.js"></script>
 </body>
 </html>
